@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Summer I Came Back - Houd Yahya</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/api/placeholder/1200/600');
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background: linear-gradient(transparent, #f5f5f5);
+        }
+        .hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            font-family: 'Segoe UI', sans-serif;
+            letter-spacing: 2px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .book-info {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 40px;
+            margin: 40px 0;
+        }
+        .cover {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        .cover:hover {
+            transform: translateY(-10px);
+        }
+        .buy-button {
+            display: inline-block;
+            background: #0066CC;
+            color: white;
+            text-decoration: none;
+            padding: 15px 40px;
+            border-radius: 30px;
+            font-weight: bold;
+            margin-top: 30px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .buy-button:hover {
+            background: #0052a3;
+            transform: scale(1.05);
+        }
+        .book-details {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-top: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .author-section {
+            margin: 60px 0;
+            text-align: center;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .price {
+            font-size: 1.8em;
+            color: #0066CC;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .subtitle {
+            font-style: italic;
+            color: #666;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="container">
+            <h1>THE SUMMER I CAME BACK</h1>
+            <p class="subtitle">Too Close To The Sun</p>
+            <a href="https://books.apple.com/us/book/the-summer-i-came-back/id6738605272?l=fr&ls=1" class="buy-button">Read Now on Apple Books</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="book-info">
+            <img src="/api/placeholder/400/600" alt="The Summer I Came Back - Book Cover" class="cover">
+            <div>
+                <h2>About the Book</h2>
+                <p>Sixteen-year-old Liam Johannsen is forced to return to Sandy Ridge for the summer after three years of self-imposed exile. A place that once held his happiest memories became unbearable after two devastating events: the crushing rejection from his lifelong best friend Lea, and the sudden death of his beloved grandfather - events that occurred on the same fateful day.</p>
+                <p>Now back in the seaside village his grandfather helped build, Liam must confront the ghosts of his past.</p>
+                
+                <div class="book-details">
+                    <p><strong>Genre:</strong> Young Adult</p>
+                    <p><strong>Pages:</strong> 346</p>
+                    <p class="price">$3.99 USD</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="author-section">
+            <h2>About the Author</h2>
+            <p>Houd Yahya is a rising voice in contemporary young adult and new adult fiction, known for weaving complex emotional narratives with elements of romance, adventure, and family dynamics. With six published novels under his belt, including the acclaimed "Atlas" and "The Summer" duology, Houd has demonstrated his unique ability to capture the intensity of young love and self-discovery.</p>
+            <p>His latest novel, The Summer I Came Back: Too Close To The Sun, showcase his versatility in blending traditional romance with modern themes. His writing style, characterized by immersive storytelling and authentic character relationships, has helped establish him as a noteworthy author in the YA/NA literary landscape.</p>
+        </div>
+    </div>
+</body>
+</html>
